@@ -254,8 +254,52 @@ body {
 
 /* ===== Footer ===== */
 footer {
-  text-align: center;
-  padding: 2rem;
-  opacity: 0.6;
+  border-top: 1px solid var(--card-border);
+  padding: 3rem 2rem 1.5rem;
   font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+}
+
+.footer-logo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.footer-brand p {
+  opacity: 0.6;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--text);
+  opacity: 0.6;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  color: var(--primary);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--card-border);
+  opacity: 0.5;
 }
